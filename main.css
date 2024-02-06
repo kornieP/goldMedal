@@ -9,7 +9,7 @@ body {
     display: none;
 
     padding: 10px;}
-#frame2#frame1{
+#frame2{
     height:100vh;
     margin: auto;
     width: 50%;
@@ -23,6 +23,9 @@ body {
     .container div{ 
         float:left;
     }
+    #frame3{
+        font-size: 200%;
+}
     #frame4{
         height:100vh;
         margin: auto;
