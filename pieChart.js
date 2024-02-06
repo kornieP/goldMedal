@@ -98,15 +98,15 @@ async function processData() {
             return ret.join(" ");
         }
         const margin2 = {top: 10, right: 30, bottom: 90, left: 40},
-        width2 = 1980 - margin2.left - margin2.right,
+        width2 = 1000 - margin2.left - margin2.right,
         height2 = 1080 - margin2.top - margin2.bottom;
         const svgNode = d3.select('#pieChart') 
           .append('svg')
           .attr('width', width2 + margin2.left + margin2.right)
-          .attr('height', height2 + margin2.top + margin2.bottom)
+          .attr('height', (height2 + margin2.top + margin2.bottom)/1.5)
 
         svgNode.append("g").attr("id","test");            
-        const id = "test", x =width2/2, y =height2/2
+        const id = "test", x = width2/2, y =height2/2/2
         var slices = d3.select("#"+id).append("g").attr("transform", "translate(" + x + "," + y + ")")
         .attr("class", "slices");
       slices.selectAll(".outerSlice").data(_data).enter().append("path").attr("class", "outerSlice")

@@ -2,34 +2,42 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <title>Thailandddd</title>
-
+    <title>Thailanddddd</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
 </head>
 <body>
     <script src="https://d3js.org/d3.v6.js"></script>
-    <div id="frame1">
-        <h1>กีฬา กีฬา เป็นยาวิเศษ</h1>
+    <div id="frame1" hidden>
+        <h1 id="sport">กีฬา กีฬา เป็นยาวิเศษ</h1>
         <a title="Dave Johnston, Copyrighted free use, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Animated-Flag-Thailand.gif"><img width="128" alt="Animated-Flag-Thailand" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Animated-Flag-Thailand.gif"></a>
         <h1>มาลองทายกันว่าประเทศไทยเคยได้เหรีญทองใน SEA Games มากที่สุดกี่เหรียญ</h1>
         <div>
-            <svg width="1000" height="120" >
-                <circle cx="40" cy="60" r="30"></circle>
+            <svg width="300" height="120" >
+                <circle cx="40" cy="60" r="30" fill="#EDAB1F" stroke="#FBCC09" stroke-width="3"></circle>
                 <text x="40" y="60" fill="white" text-anchor="middle" alignment-baseline="middle">1999</text>
-                <circle cx="140" cy="60" r="30"></circle>
+                <circle cx="140" cy="60" r="30" fill="#EDAB1F" stroke="#FBCC09" stroke-width="3"></circle>
                 <text x="140" y="60" fill="white" text-anchor="middle" alignment-baseline="middle">1998</text>
-                <circle cx="240" cy="60" r="30"></circle>
+                <circle cx="240" cy="60" r="30" fill="#EDAB1F" stroke="#FBCC09" stroke-width="3"></circle>
                 <text x="240" y="60" fill="white" text-anchor="middle" alignment-baseline="middle">1997</text>
             </svg>
         </div>
-        <div>
-            <button>ไปดูกันเลย!</button>
-        </div>
+
     </div>
-    <div id="frame2">
+    <div id="frame2" class="container" hidden>
         <div id="graphGoldMax">
             <script src="https://d3js.org/d3.v6.js"></script>
             <script src="showMaxGold.js"></script>
+           <div id="text1">
+            ปี2007 ไทยถึงทำไปได้ถึง 183 เหรียญทอง! เยอะกว่าค่าเฉลี่ยโดยรวมถึงเกือบ2เท่า! <br>
+        ส่วนสาเหตุที่นักกีฬาฟิตกันขนาดนั้น ผมก็ไม่ทราบ เพราะอาจารย์บอกให้ใช้แค่data set ทีให้มา!
+    </div> 
         </div>
+        <div>        
+        </div>
+
     </div>
     <div id="frame3">
         <div id="graphGoldAll">
@@ -39,6 +47,7 @@
     </div>
     <div id="frame4">
         <div id="pieChart">
+            And I baked something special for you! <br> A colourful 3D pie chart! Made with ❤️ and d3
             <script src="https://d3js.org/d3.v6.js"></script>
             <script src="pieChart.js"></script>
         </div>

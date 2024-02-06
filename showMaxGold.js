@@ -48,7 +48,20 @@ svg.selectAll("mycircle")
   .join("circle")
     .attr("cx", function(d) { return x(d.Year); })
     .attr("cy", function(d) { return y(d.Value); })
-    .attr("r", "4")
-    .style("fill", "#69b3a2")
-    .attr("stroke", "black")
+    .attr("r", "8")
+    .style("fill", "#EDAB1F")
+    .attr("stroke", "#FBCC09")
+
+svg.append('line')
+.attr('class', 'horizontal-line')
+.attr('x1', 0) // Start X coordinate (usually 0 for left alignment)
+.attr('y1', function(d) { return y(77);}) // Y coordinate based on your chosen value
+.attr('x2', 800) // End X coordinate (usually chart width)
+.attr('y2', function(d) { return y(77);}) // End Y coordinate remains the same
+.attr('stroke', 'gray') // Line color
+.attr('stroke-width', 0.5) // Line width
+svg.append("text")
+	.text("average: 77")
+	.attr("x", 800)
+	.attr("y", function(d) { return y(77);});
 })

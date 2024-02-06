@@ -1,0 +1,32 @@
+body {
+    font-family: 'Kanit', sans-serif;
+  }
+#frame1{
+    height:100vh;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+
+    padding: 10px;}
+#frame2#frame1{
+    height:100vh;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+
+    padding: 10px;}
+    .container{ 
+        float:left; 
+        width:100%; 
+    }
+    .container div{ 
+        float:left;
+    }
+    #frame4{
+        height:100vh;
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        font-size: 150%;
+
+        padding: 10px;}

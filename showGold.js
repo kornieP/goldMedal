@@ -1,5 +1,5 @@
 const margin1 = {top: 10, right: 30, bottom: 90, left: 40},
-width1 = 1980 - margin1.left - margin1.right,
+width1 = 1800 - margin1.left - margin1.right,
 height1 = 1080 - margin1.top - margin1.bottom;
 // append the svg object to the body of the page
 const svg1 = d3.select("#graphGoldAll")
@@ -46,7 +46,8 @@ svg1.selectAll("mycircle")
   .join("circle")
     .attr("cx", function(d) { return x(d.Year); })
     .attr("cy", function(d) { return y(d.Value); })
-    .attr("r", "4")
-    .style("fill", "#69b3a2")
-    .attr("stroke", "black")
+    .attr("r", "8")
+    .style("fill", "#EDAB1F")
+    .attr("stroke", "#FBCC09")
+
 })
